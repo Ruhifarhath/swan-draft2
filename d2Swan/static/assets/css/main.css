@@ -43,6 +43,18 @@ h6 {
   margin-top: 90px;
 }
 
+
+/*--------------------------------------------------------------
+Header
+--------------------------------------------------------------*/
+
+#header #swan-logo{
+  margin-right: 10px;
+}
+#header #iit-kgp-logo{
+  margin-left: 10px;
+}
+
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
@@ -209,6 +221,12 @@ section {
 
 section {
   scroll-margin-top: 70px;
+}
+
+/* swan heading  */
+#swan-heading{
+  margin-top: 10%;
+  margin-left: 30%;
 }
 
 /*--------------------------------------------------------------
@@ -447,6 +465,40 @@ section {
 
   .mobile-nav-active .navbar>ul {
     display: block;
+  }
+}
+
+/* announcements */
+  #announcements {
+    margin-top:50%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 75rem; /* Adjust width as needed */
+    z-index: 1000; /* Ensure it appears above other elements */
+  }
+
+.marquee {
+  overflow: hidden;
+  position: relative;
+  height: 200px; /* Adjust height as needed */
+  border: 1px solid #ddd;
+}
+.marquee-content {
+  position: absolute;
+  width: 100%;
+  animation: marquee 10s linear infinite;
+}
+.marquee:hover .marquee-content {
+  animation-play-state: paused;
+}
+@keyframes marquee {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -100%;
   }
 }
 
@@ -1195,6 +1247,18 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+#footer-main-content{
+  background-color: red;
+}
+#footer #footer_links{
+  margin-bottom: 20%;
+}
+#footer #gmaps{
+  margin-left: 70%;
+}
+#footer{
+  margin-top: 30%;
+}
 .footer {
   overflow: hidden;
   background: rgba(var(--color-black-rgb), 0.9);
